@@ -81,6 +81,6 @@ When staging the PDF, Git does not copy the file into its internal database. Ins
 #### diff=lfs (The Comparison):
 Because a PDF is a complex binary file, this prevents Git from attempting to read inside the file line-by-line, and instead checks if the version ID has changed.
 
-merge=lfs (Conflict Resolution): Instructs Git to use LFS logic for merge conflicts, picking one version over another based on the file's unique ID rather than attempting a text merge.
+#### merge=lfs (Conflict Resolution): Instructs Git to use LFS logic for merge conflicts, picking one version over another based on the file's unique ID rather than attempting a text merge.
 
--text (The Data Type): Explicitly declares the file is not plain text, preventing Git from attempting to format line endings (like Windows CRLF to Linux LF), which would corrupt the binary file.
+#### -text (The Data Type): Explicitly declares the file is not plain text, preventing Git from attempting to format line endings (like Windows CRLF to Linux LF), which would corrupt the binary file.
